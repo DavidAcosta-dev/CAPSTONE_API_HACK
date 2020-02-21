@@ -38,7 +38,23 @@ function watchForm(){
 function getRecepies(){
     $('#js-show-recepies-button').on('click', e=> {
         console.log("So this is what the ingredient string looks like..."+ STORE.list.join(','));
-        console.log(STORE.list)
+        console.log(STORE.list);
+
+        let url = STORE.baseUrl + `apiKey=${STORE.apiKey}&ingredients=${encodeURIComponent(STORE.list.join(','))}`;
+
+        console.log(url);
+
+        fetch(url)
+        .then(res=> {
+            if(res.ok){
+                return res.json();
+            }
+            throw new Error(res.statusText);
+        })
+        .then(resJson=> console.log(resJson))
+        .catch(err=> {
+            console.log(err.message);
+        })
 
         
 
