@@ -1,7 +1,10 @@
 
 body {
-    background-image: url("images/kitchen.jpg");
-    background-size: fill;
+    background-image: url(images/pot2.gif),url(images/kitchen.jpg),url(images/tile.jpg);
+    background-position: center top, left top;
+    background-position-y: 154px, 10px;
+    background-repeat: no-repeat;
+    background-size: 134vw 182vw, 124vw 143vw;
 }
 
 * {
@@ -30,9 +33,83 @@ h1 {
 
 .recipie-image {
     border: solid 1px rgba(0, 0, 255, 0.596);
-    border-radius: 13px;
+    border-radius: 40px;
     width: 40%;
 }
+
+.expanded {
+    font-size: larger;
+}
+
+input.expanded {
+    width: 50%;
+    border-radius: 14px;
+}
+
+.icon-badges.expanded {
+    width: 100px;
+    height: 100px;
+}
+
+.icon-like {
+    width: 20px;
+}
+
+.like-span {
+    text-align: left;
+}
+
+.icon-badges {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.used {
+    border: solid 1px green;
+    background-color: #c8ffe2;
+}
+
+.missed {
+    border: solid 1px red;
+    background-color: #ffdada;
+}
+
+.ingredient-badges-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.required-ingredients {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.req-ing-title-div {
+    text-align: left;
+}
+
+.req-ing-title-h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#word-bubble {
+    font-size: larger;
+    position: fixed;
+    left: 40%;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.692);
+}
+
+/* .big-pot {
+    position: sticky;
+    left: -42px;
+    width: 124vw;
+} */
 
 .hidden {
     display: none;
