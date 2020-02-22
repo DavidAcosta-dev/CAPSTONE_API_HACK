@@ -1,7 +1,7 @@
 
 
 STORE = {
-    apiKey: ghostKey,
-    baseUrl: 'https://api.spoonacular.com/recipes/findByIngredients?number=5&ranking=1&',
-    list: []
+    baseUrl: 'https://api.spoonacular.com/recipes/findByIngredients?number=2&ranking=1&',
+    list: [],
+    recipieList: []
 }
