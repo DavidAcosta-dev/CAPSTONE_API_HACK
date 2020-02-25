@@ -12,8 +12,7 @@ body {
 }
 
 h1 {
-    border: 1px solid black;
-    background-color: rgba(80, 214, 255, 0.521);
+    
 }
 
 
@@ -103,6 +102,46 @@ input.expanded {
     left: 40%;
     border: 1px solid white;
     background-color: rgba(255, 255, 255, 0.692);
+}
+
+#reset-button {
+    display: block;
+    position: absolute;
+    right: 9px;
+    top: 63px;
+    border-radius: 13px;
+    background-color: rgba(255, 99, 71, 0.76);
+}
+
+button {
+    border-radius: 13px;
+}
+
+#ing-label {
+    border-radius: 13px;
+    background-color: whitesmoke;
+}
+
+.app-title {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.486);
+    background-color: rgba(80, 214, 255, 0.521);
+    border-radius: 13px;
+}
+
+#js-form {
+    border: solid 2px rgba(0, 0, 0, 0.486);
+    border-radius: 7px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    text-align: center;
+    background-color: rgba(80, 214, 255, 0.56);
+}
+
+#js-add-ingredient-button {
+    padding: 8px;
+    background-color: #23dc23b0;
+    border-radius: 47%;
 }
 
 /* .big-pot {
