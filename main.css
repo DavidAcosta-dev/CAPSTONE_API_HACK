@@ -11,15 +11,34 @@ body {
     list-style-type: none;
 }
 
-h1 {
-    
-}
-
-
 .ingredient {
-    border: 2px solid black;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 13px;
     background-color: rgba(231, 231, 231, 0.699);
+    font-style: italic;
 }
+
+.ingredient button {
+    position: relative;
+    right: -146px;
+    bottom: 2px;
+    border-radius: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #ff000099;
+}
+
+.ingredients-list-div {
+    text-align: center;
+}
+
+.ingredients-list-div h2 {
+    color: #8c0000;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
 .recepie-div {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -142,6 +161,11 @@ button {
     padding: 8px;
     background-color: #23dc23b0;
     border-radius: 47%;
+}
+
+#ingredient {
+    font-size: large;
+    border-radius: 7px;
 }
 
 /* .big-pot {

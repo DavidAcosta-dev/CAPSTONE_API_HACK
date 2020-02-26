@@ -101,7 +101,7 @@ function renderList(list){
     let ingList = []
     
     list.map(itm=> {
-        ingList.push(`<li class="ingredient ${itm}"><h3>${itm}</h3><button class="delete-${itm}" type="button">Delete</button></li>`)
+        ingList.push(`<li class="ingredient ${itm}"><h3>${itm}</h3><button class="delete-${itm}" type="button">&#10060</button></li>`)
     })
 
     console.log(ingList);
